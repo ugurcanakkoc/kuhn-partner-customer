@@ -26,7 +26,7 @@ export function Header() {
             }}
         >
             <div className="max-w-[1920px] mx-auto">
-                <div className="flex justify-between items-center bg-black/40 backdrop-blur-2xl border border-white/5 rounded-sm shadow-2xl relative overflow-hidden group p-[calc(1.5rem*var(--logo-scale))]">
+                <div className="flex justify-between items-center bg-black/40 backdrop-blur-2xl border border-white/5 rounded-sm shadow-2xl relative overflow-hidden group py-[calc(1.5rem*var(--logo-scale))] px-0">
 
                     {/* Logo Section - Dual Brand */}
                     <div className="flex items-center relative z-10 gap-[calc(1.5rem*var(--logo-scale))] md:gap-[calc(2rem*var(--logo-scale))]">
@@ -42,13 +42,13 @@ export function Header() {
                                 style={{
                                     transform: `translate(${customerData.logoOffsetX ?? 0}px, ${customerData.logoOffsetY ?? 0}px)`,
                                 }}
-                                className="relative cursor-pointer w-[calc(160px*var(--logo-scale))] md:w-[calc(224px*var(--logo-scale))] h-[calc(40px*var(--logo-scale))] md:h-[calc(56px*var(--logo-scale))]"
+                                className="relative cursor-pointer w-[calc(80px*var(--logo-scale))] md:w-[calc(110px*var(--logo-scale))] h-[calc(40px*var(--logo-scale))] md:h-[calc(56px*var(--logo-scale))]"
                             >
                                 <Image
                                     src={customerData.logoPath}
                                     alt="Customer Logo"
                                     fill
-                                    className={`object-contain ${customerData.logoAlign === "center" ? "object-center" : "object-left"} transition-opacity duration-300`}
+                                    className="object-contain object-right transition-opacity duration-300"
                                 />
                             </motion.div>
                         </Link>
