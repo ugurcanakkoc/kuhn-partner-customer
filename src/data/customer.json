@@ -1,0 +1,10 @@
+{
+  "logoPath": "/customer-logo.png",
+  "websiteUrl": "https://www.kuhn-partner.de/",
+  "defaultLang": "de",
+  "logoScale": 1.1,
+  "logoOffsetX": 0,
+  "logoOffsetY": 0,
+  "logoAlign": "center",
+  "headerPaddingX": 0
+}
